@@ -1,4 +1,20 @@
  1.googlenews.xorg.pl
+,ads.mopub.com
+,mpx.mopub.com
+,gateway.icloud.com
+,haggler-mopub793-us-e-ec2.liftoff.io
+,ocsp.int-x3.letsencrypt.org
+,s.fqtag.com
+,haggler-mopub819-us-e-ec2.liftoff.io
+,haggler-mopub853-us-e-ec2.liftoff.io
+,haggler-mopub809-us-e-ec2.liftoff.io
+,haggler-mopub845-us-e-ec2.liftoff.io
+,fbstatic-a.akamaihd.net
+,lookaside.facebook.com
+,cdn.liftoff.io
+,haggler-mopub808-us-e-ec2.liftoff.io
+,img.mobusi.com
+,a.rivebox.com
 , 119.29.196.104.bc.googleusercontent.com
 , 123c.vn
 , 13453765871837679316.googlegroups.com
