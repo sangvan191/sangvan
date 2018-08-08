@@ -1,7 +1,6 @@
 1.googlenews.xorg.pl
 ,ads.mopub.com
 ,mpx.mopub.com
-,gateway.icloud.com
 ,haggler-mopub793-us-e-ec2.liftoff.io
 ,ocsp.int-x3.letsencrypt.org
 ,s.fqtag.com
@@ -10,7 +9,6 @@
 ,haggler-mopub809-us-e-ec2.liftoff.io
 ,haggler-mopub845-us-e-ec2.liftoff.io
 ,fbstatic-a.akamaihd.net
-,lookaside.facebook.com
 ,cdn.liftoff.io
 ,haggler-mopub808-us-e-ec2.liftoff.io
 ,img.mobusi.com
