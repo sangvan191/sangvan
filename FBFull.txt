@@ -1,0 +1,250 @@
+[Adblock Plus 2.0]
+! Checksum: 4MYH9lkE+S6iLOi+FOtfeg
+! Title: Anti-Facebook List
+! Updated: 19 May 2018
+! Expires: 6 days
+! License: http://creativecommons.org/licenses/by/3.0/
+! Homepage: http://www.fanboy.co.nz/
+! Reporting Issues: https://github.com/ryanbr/fanboy-adblock/issues
+!
+! Legal stuff (T&C's) .
+! In no event shall Fanboy List, or the list author be liable for any indirect, direct, punitive, special, incidental, or consequential damages whatsoever.
+! By downloading or viewing, or using this list, you are accepting these terms and the license.
+!
+!
+! Warning, will break on facebook-based comment sites and may also break on some facebook apps or games.
+!
+! Thirdparty Filters
+!
+||api-read.facebook.com/restserver.php?api_key=$third-party
+||api.facebook.com^$third-party
+||badge.facebook.com^$third-party
+||connect.facebook.com^$third-party,domain=~facebook.net|~fb.com
+||connect.facebook.net^$third-party,domain=~facebook.com|~fb.com
+||facebook.com/connect/$third-party
+||facebook.com/dialog/oauth?display=popup$popup,domain=humorhub.org
+||facebook.com/plugins/activity.php?$third-party
+||facebook.com/plugins/comments.php?$third-party
+||facebook.com/plugins/facepile.php?$third-party
+||facebook.com/plugins/fan.php?$third-party
+||facebook.com/plugins/follow.php$third-party
+||facebook.com/plugins/like.php?$third-party
+||facebook.com/plugins/like_box.php$third-party
+||facebook.com/plugins/likebox.php?$third-party
+||facebook.com/plugins/post.php?$third-party
+||facebook.com/plugins/recommendations.php?$third-party
+||facebook.com/plugins/recommendations_bar.php?$third-party
+||facebook.com/plugins/send.php?$third-party
+||facebook.com/plugins/share_button.php?$third-party
+||facebook.com/plugins/subscribe.php$third-party
+||facebook.com/plugins/subscribe?$third-party
+||facebook.com/restserver.php?*.getStats&$third-party
+||facebook.com/whitepages/wpminiprofile.php$third-party
+||facebook.com/widgets/activity.php?$third-party
+||facebook.com/widgets/fan.php?$third-party
+||facebook.com/widgets/like.php?$third-party
+||facebook.com/widgets/recommendations.php?$third-party
+||fbcdn-profile-a.akamaihd.net^$third-party,domain=~facebook.com
+||google.com/js/client:plusone.js$third-party
+||google.com/js/plusone.js$third-party
+||graph.facebook.com/?id=$third-party
+||graph.facebook.com^$third-party,xmlhttprequest
+||profile.ak.fbcdn.net^$third-party,domain=~facebook.com
+||scontent-a.*.fbcdn.net^$third-party,domain=~facebook.com
+||spot.im/embed/scripts/launcher.js$third-party
+||static.ak.fbcdn.net^$third-party,domain=~facebook.com
+!
+! Test Filters (For Gannett sites, which don't work anyways with Facebook blocked)
+!
+##.util-bar-module-firefly-visible
+!
+! Whitelist Filters
+!
+@@/cdn-cgi/pe/bag2?*connect.facebook.net$domain=forwardprogressives.com|onhax.net|opensubtitles.org|viralthread.com|youngcons.com
+@@||akamaihd.net/rsrc.php/$domain=facebook.com
+@@||channel.facebook.com^$domain=facebook.com
+@@||connect.facebook.com^*/AudienceNetworkPrebid.js$domain=vice.com
+@@||facebook.com/ajax/browse/$domain=facebook.com
+@@||facebook.com/ajax/bz$domain=facebook.com
+@@||facebook.com/ajax/chat/buddy_list.php$domain=facebook.com
+@@||facebook.com/ajax/chat/hovercard/$domain=facebook.com
+@@||facebook.com/ajax/hovercard/$domain=facebook.com
+@@||facebook.com/ajax/litestand/$domain=facebook.com
+@@||facebook.com/ajax/notifications/$domain=facebook.com
+@@||facebook.com/ajax/pagelet/$domain=facebook.com
+@@||facebook.com/ajax/photos/$domain=facebook.com
+@@||facebook.com/ajax/presence/$domain=facebook.com
+@@||facebook.com/ajax/typeahead/$domain=facebook.com
+@@||facebook.com/ajax/webstorage/$domain=facebook.com
+@@||facebook.com/chat/$domain=facebook.com
+@@||facebook.com/images/$domain=facebook.com
+@@||fbcdn-photos-*.akamaihd.net^$domain=facebook.com
+@@||fbcdn-profile-*.akamaihd.net^$domain=facebook.com
+@@||fbcdn-sphotos-*.akamaihd.net^$domain=facebook.com
+@@||fbexternal-*.akamaihd.net^$domain=facebook.com
+@@||scontent-*.fbcdn.net^$domain=facebook.com
+!
+! Problematic sites
+!
+@@||connect.facebook.com^*/audiencenetworkprebid.js$script,domain=screenrant.com
+@@||connect.facebook.net^$script,domain=abc.go.com|adultswim.com|contv.com|damnyouautocorrect.com|embedly.com|fitbit.com|instagram.com|interviewmagazine.com|noovo.ca|pogo.com|reddit.com|salon.com|sci2.tv|southpark.cc.com|southpark.de|upi.com
+@@||google.com/js/plusone.js$domain=abcnews.go.com|watch.nba.com
+@@||graph.facebook.com^$xmlhttprequest,domain=theguardian.com
+@@||staticxx.facebook.com/connect/$domain=embedly.com
+!
+! Cloudflare CDN
+!
+/cdn-cgi/pe/bag2?*connect.facebook.com
+/cdn-cgi/pe/bag2?*connect.facebook.net
+
+[Adblock Plus 2.0]
+! Checksum: n6ja+L2vHnKQHlJbIkL5CQ
+! Version: 201808171912
+! Expires: 1 days
+! Title: facebook annoyances blocker
+! Homepage: http://facebook.adblockplus.me/
+! Right sidebar
+! Various suggestions/recommendations
+facebook.com##.home_right_column .ego_column.egoOrganicColumn
+facebook.com###globalContainer .ego_column.egoOrganicColumn
+facebook.com###rightCol .ego_column.egoOrganicColumn
+facebook.com##.home_right_column .pagelet.egoOrganicColumn
+facebook.com###globalContainer .pagelet.egoOrganicColumn
+facebook.com###rightCol .pagelet.egoOrganicColumn
+! "Trending" box
+facebook.com###pagelet_trending_tags_and_topics
+! "Featured Music Services" (Music feed)
+facebook.com###music_services
+! "Games Your Friends Are Playing" (Games feed)
+facebook.com##.rightColumnWrapper > ._5ksw
+facebook.com##.rightColumnWrapper > ._5ms_
+! "Game requests/invitations" 
+facebook.com##.rightColumnWrapper .fbRemindersRemove + #custom_reminders_link[data-gt*="\"appid\":\""]
+! "Recommended games"
+facebook.com###pagelet_games_rhc
+! In news feed
+! "Upcoming Events" and "Most Shared On Page X"
+facebook.com##.fbMainStreamAttachment ._4hh
+! "Recently Released Albums"
+facebook.com##.fbMainStreamAttachment ._4hl
+! "Similar To Page X" (after liking a post in the news feed)
+facebook.com##.commentable_item + .mvs
+facebook.com##.commentable_item + div > .mvs
+facebook.com##div[id^="substream_"] > div > div > .mvm
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV > .mbm > ._4_ck
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV[data-ownerid^="u_"] > .mvm
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV[data-ownerid^="u_"] > DIV > .mbm > ._4_ck
+facebook.com##DIV[id^="feed_stream_"] > DIV[id^="js_"] > DIV > DIV > DIV[data-ownerid^="u_"] > .mvm
+facebook.com##DIV[id^="substream_"] ._2bex > .mbm > ._4_ck
+facebook.com###pagelet_group_ .mbm > ._4_ck
+! "Suggestions" below a post
+facebook.com##.userContentWrapper > ._5pax > DIV > .mvs
+! "Page X is posting about Page Y", "Page X is similar to Pages you like" and "Trending about Page X"
+facebook.com##.storyContent > .storyUnconnectedPost
+! "Games You May Like" (new Facebook news feed)
+facebook.com##.mbm._6nl + .uiList > ._6n2
+facebook.com##.mbm._6nl
+facebook.com##._5pcr > .mbm._43rz
+facebook.com##._5pcr > .mbm._43rz + ._43r-
+facebook.com##.mbm._43rz + .uiList > ._43s1
+facebook.com##.mbm._43rz + .uiList + .uiList
+facebook.com##.mbm > ._5pcr > .mbs + ._43r- > .uiList
+facebook.com##.mbm > ._5pcr > .mbs
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > A[href="https://www.facebook.com/games/"]
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg ._50z3 > ._50zm
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > ._3dp._29k > DIV > ._5pbw > .fsl.fwb.fcb
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > ._3dp._29k > DIV > ._5pbw + .uiLinkSubtle[href="https://www.facebook.com/games/"]
+! "People you may know"
+facebook.com###stream_pagelet > #pagelet_composer + ._4-u2._2ph_._3-95
+! Other
+! All recommendations in the right sidebar but when viewing an image in gallery view 
+facebook.com##.photoUfiContainer .ego_column.egoOrganicColumn
+facebook.com##.photoUfiContainer .pagelet.egoOrganicColumn
+! "Like Your Favorite Pages" (Pages feed)
+facebook.com##.megaphone_location_pages_feed
+! Right sidebar on app/game pages
+apps.facebook.com###rightCol
+! "People You May Know" on profile page
+facebook.com###pagelet_pymk_timeline
+
+[Adblock Plus 2.0]
+! Checksum: 06i0DqP81l4ysCB9IkhN3w
+! Version: 201808171912
+! Expires: 1 days
+! Title: facebook news feed annoyances blocker
+! Homepage: http://facebook.adblockplus.me/
+! In news feed
+! "Upcoming Events" and "Most Shared On Page X"
+facebook.com##.fbMainStreamAttachment ._4hh
+! "Recently Released Albums"
+facebook.com##.fbMainStreamAttachment ._4hl
+! "Similar To Page X" (after liking a post in the news feed)
+facebook.com##.commentable_item + .mvs
+facebook.com##.commentable_item + div > .mvs
+facebook.com##div[id^="substream_"] > div > div > .mvm
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV > .mbm > ._4_ck
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV[data-ownerid^="u_"] > .mvm
+facebook.com##DIV[id^="substream_"] > DIV > DIV > DIV[data-ownerid^="u_"] > DIV > .mbm > ._4_ck
+facebook.com##DIV[id^="feed_stream_"] > DIV[id^="js_"] > DIV > DIV > DIV[data-ownerid^="u_"] > .mvm
+facebook.com##DIV[id^="substream_"] ._2bex > .mbm > ._4_ck
+facebook.com###pagelet_group_ .mbm > ._4_ck
+! "Suggestions" below a post
+facebook.com##.userContentWrapper > ._5pax > DIV > .mvs
+! "Page X is posting about Page Y", "Page X is similar to Pages you like" and "Trending about Page X"
+facebook.com##.storyContent > .storyUnconnectedPost
+! "Games You May Like" (new Facebook news feed)
+facebook.com##.mbm._6nl + .uiList > ._6n2
+facebook.com##.mbm._6nl
+facebook.com##._5pcr > .mbm._43rz
+facebook.com##._5pcr > .mbm._43rz + ._43r-
+facebook.com##.mbm._43rz + .uiList > ._43s1
+facebook.com##.mbm._43rz + .uiList + .uiList
+facebook.com##.mbm > ._5pcr > .mbs + ._43r- > .uiList
+facebook.com##.mbm > ._5pcr > .mbs
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > A[href="https://www.facebook.com/games/"]
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg ._50z3 > ._50zm
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > ._3dp._29k > DIV > ._5pbw > .fsl.fwb.fcb
+facebook.com##DIV[id^="topnews_main_stream_"] .userContentWrapper > ._1dwg > ._5x46 > ._3dp._29k > DIV > ._5pbw + .uiLinkSubtle[href="https://www.facebook.com/games/"]
+! "People you may know"
+facebook.com###stream_pagelet > #pagelet_composer + ._4-u2._2ph_._3-95
+
+[Adblock Plus 1.1]
+!
+! Facebook Privacy List - Block Facebook objects on non-Facebook websites
+! http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt
+! License: http://creativecommons.org/licenses/by-sa/3.0/
+! Last modified: 18 May 2010 05:40 UTC
+! Expires: 7 days (updates automatically every 7 days)
+!
+! Please report problems to:
+! E-Mail: fbprivacylist -at- squirrelconspiracy.net
+!
+||facebook.com$domain=~www.facebook.com
+||facebook.net$domain=~www.facebook.com
+||fbcdn.net$domain=~www.facebook.com
+
+[Adblock Plus 2.0]
+! Checksum: tCjw45H/2MqRjDzanqFH9Q
+! Version: 201808171912
+! Expires: 1 days
+! Title: facebook sidebar blocker
+! Homepage: http://facebook.adblockplus.me/
+! Right sidebar
+! Various suggestions/recommendations
+facebook.com##.home_right_column .ego_column.egoOrganicColumn
+facebook.com###globalContainer .ego_column.egoOrganicColumn
+facebook.com###rightCol .ego_column.egoOrganicColumn
+facebook.com##.home_right_column .pagelet.egoOrganicColumn
+facebook.com###globalContainer .pagelet.egoOrganicColumn
+facebook.com###rightCol .pagelet.egoOrganicColumn
+! "Trending" box
+facebook.com###pagelet_trending_tags_and_topics
+! "Featured Music Services" (Music feed)
+facebook.com###music_services
+! "Games Your Friends Are Playing" (Games feed)
+facebook.com##.rightColumnWrapper > ._5ksw
+facebook.com##.rightColumnWrapper > ._5ms_
+! "Game requests/invitations" 
+facebook.com##.rightColumnWrapper .fbRemindersRemove + #custom_reminders_link[data-gt*="\"appid\":\""]
+! "Recommended games"
+facebook.com###pagelet_games_rhc

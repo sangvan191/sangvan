@@ -1,0 +1,81 @@
+[Adblock Plus 2.0]
+! Checksum: yUS7OXvuORB/2B/D5UmUJQ
+! Version: 201808171912
+! Expires: 1 days
+! Title: Youtube: Pure Video Experience
+! Homepage: http://youtube.adblockplus.me/
+! Removes comments on video pages
+||youtube.com/live_chat_fragments_ajax?$xmlhttprequest
+||youtube.com/comment_service_ajax?$domain=youtube.com
+youtube.com###comments
+! Removes all annotations in videos
+||youtube.com/annotations_invideo?$object-subrequest
+! HTML5 version
+youtube.com##.video-annotations
+! Removes video suggestions on video pages
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item > .related-video
+youtube.com##.watch-sidebar-body > #watch-related > .related-list-item
+! Removes recommended channels on home page, susbcriptions page and feed
+youtube.com##.home .branded-page-v2-secondary-col
+youtube.com##.feed .branded-page-v2-secondary-col
+youtube.com##.guide-builder-v2 .branded-page-v2-secondary-col
+! Removes sharing tab below videos
+||youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
+youtube.com##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
+youtube.com##.yt-uix-button[data-trigger-for="action-panel-share"]
+! Removes recommended and featured videos in the endscreen
+||ytimg.com/yts/swfbin/player-*/endscreen.swf$object-subrequest,domain=youtube.com
+youtube.com##.html5-endscreen-content
+youtube.com##.html5-endscreen
+! Removes related/featured/popular channels on channel pages
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip
+youtube.com##.branded-page-v2-secondary-col > .branded-page-related-channels > .yt-uix-tooltip + .branded-page-related-channels-list
+! "Subscribe to see more videos from this channel" on home page after watching some video of a channel
+youtube.com###channel-subscription-promo-in-feed
+
+[Adblock Plus 1.1]
+! Checksum: 3sy+Wo4Cuc3R44xZcXSdkA
+! Title: adblock-youtube-ads
+! Homepage: https://github.com/kbinani/adblock-youtube-ads
+! License: https://github.com/kbinani/adblock-youtube-ads/blob/master/LICENSE
+##.ad-container
+##.video-ads
+##.ytp-ad-progress-list
+=adunit&
+||doubleclick.net^
+||flashtalking.com$domain=youtube.com
+||googleadservices.com
+||googlesyndication.com^
+||s0.2mdn.net/ads
+||www.google.*/pagead$domain=youtube.com
+||www.youtube.com/[[computeEmptyGif_()]]$image
+||www.youtube.com/[[computeThumbnailUrl_(data.thumbnail)]]
+||www.youtube.com/api/stats
+||www.youtube.com/pagead
+||www.youtube.com/ptracking
+
+[Adblock Plus 2.0]
+! Name: Stop Autoplay On YouTube
+! Expires: 7 days
+! Version: 31July2018v1-Beta
+! Description: Are you tired of having to turn off autoplay on YouTube every time you e.g. go to incognito mode? Are you worried of having to use specific extensions just for that purpose? Then this list is for you.
+! For more information about this list and other lists of mine, go to https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#english
+/watch_autoplayrenderer.js$script,domain=www.youtube.com
+/annotations_module.js$script,domain=www.youtube.com
+/endscreen.js$script,domain=www.youtube.com
+
+[Adblock Plus 2.0]
+! Checksum: IQaSKH51W1LfP8arTcwy1w
+! Version: 201808171912
+! Expires: 1 days
+! Title: Youtube: Other Annoyances
+! Homepage: http://youtube.adblockplus.me/
+! Removes all annotations in videos
+||youtube.com/annotations_invideo?$object-subrequest
+! HTML5 version
+youtube.com##.video-annotations
+! Removes sharing tab below videos
+||youtube.com/share_ajax?action_get_share_box=1&video_id=$xmlhttprequest
+youtube.com##.action-panel-trigger[role="button"][data-trigger-for="action-panel-share"]
+youtube.com##.yt-uix-button[data-trigger-for="action-panel-share"]
+
