@@ -1,0 +1,6 @@
+// Design by Sang Van
+// Function: Blocked: Update iOS OTA, Update Carrier, Revoke,...
+// Fb: https://www.facebook.com/vansang191
+
+var PROXY_DIRECT="DIRECT";var DIRECT="DIRECT";var BLACK="PROXY 8.8.8.8:53";var WHITE=PROXY_DIRECT;function s(u,r){return shExpMatch(u,r);}function d(h,r){return dnsDomainIs(h,r);}function n(h,r,m){return isInNet(h,r,m);}function e(u){var h;if(u.indexOf("://")>-1){h=u.split('/')[2];}else{h=u.split('/')[0];}h=h.split(':')[0];var s=h.split('.').reverse();return s;}function FindProxyForURL(url,host){var u=url.toLowerCase();var h=host.toLowerCase();var a=e(u);var b=a[0];var c=a[1];var f=c.length;var t=c[f-1];var z=c[f-2];if(d(h,"GX7QkY.configtest.wl.is")){return"PROXY 5.9.40.99:80";}if(d(h,"wl.is")||d(h,"weblockapp.com")){return PROXY_DIRECT;}if(n(h,"127.0.0.1","255.255.255.0")){return"PROXY 127.0.0.1:8888";}if((d(h,"appldnld.apple.com")||d(h,"ppg.apple.com")||d(h,"mesu.apple.com")||d(h,"ocsp.apple.com")||s(u,"http://mesu.apple.com")||s(u,"http://ocsp.apple.com")||s(u,"http://appldnld.apple.com")||s(u,"http://ppg.apple.com")||s(u,"https://ocsp.apple.com")||s(u,"https://mesu.apple.com")||s(u,"https://appldnld.apple.com")||s(u,"https://ppg.apple.com"))){return BLACK;}return PROXY_DIRECT;}
+
