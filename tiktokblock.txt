@@ -1,0 +1,17 @@
+*.shop.tiktok.com/*
+*.seller-vn.tiktok.com/*
+*.tiktok.com/*
+*.tiktokcdn.com/*
+*.tiktokcdn-us.com/*
+*.byteicdn.com/*
+*.tiktokv.com/*
+*.ttlivecdn.com/*
+
+shop.tiktok.com
+seller-vn.tiktok.com
+tiktok.com
+tiktokcdn.com
+tiktokcdn-us.com
+byteicdn.com
+tiktokv.com
+ttlivecdn.com
